@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>petit à petit - Contact</title>
+    <meta name="description" content="Portfolio site by AYAMI MORIMURA">
+    <link rel="preload" as="font" href="fonts/lobster-v23-latin-regular.woff2" crossorigin>
+    <link rel="preload" as="font" href="fonts/noto-sans-jp-v27-latin-regular.woff2" crossorigin>
+    <link rel="stylesheet"href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
+    <link rel="stylesheet" href="css/style.css">
+  <style>
+  @font-face {
+  font-family: 'Lobster';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster Regular'), local('Lobster-Regular'),
+       url('fonts/lobster-v23-latin-regular.woff2') format('woff2');
+  }
+
+@font-face {
+  font-family: 'Noto Sans JP';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Noto Sans Japanese Regular'), local('NotoSansJapanese-Regular'),
+       url('fonts/noto-sans-jp-v27-latin-regular.woff2') format('woff2');
+
+}
+  </style>
+  </head>
+<body>
+  <div class="container">
+    <!--for responsive (max 415px) Hamburger Menu-->
+      <button type="button" class="btn__hamburger js__hamburger">
+        <span class="hamburger__line"></span>
+      </button>
+    <header class="header">
+      <div class="header__inner">
+        <h1><a href="index.html"><img class="header-logo" src="images/logo.png" alt="petit à petitホーム"></a></h1>
+        <nav>
+          <ul class="header-nav">
+            <li class="header-nav__item">
+              <a class="header-nav__link hover_Uline" href="about.html">About</a></li>
+            <li class="header-nav__item">
+              <a class="header-nav__link hover_Uline" href="works.html">Works</a></li>
+            <li class="header-nav__item">
+              <a class="header-nav__link hover_Uline" href="contact.html">Contact</a></li>
+            <li class="header-nav__item header-sns__icon">
+              <a class="header-sns__link" href="https://twitter.com/AyaWeb4"><i class="fab fa-twitter"></i>
+              <a class="header-sns__link" href=""><i class="fab fa-github"></i></a></a></li>
+          </ul>
+        </nav>
+      </div>
+      <!--/.header__inner-->
+    </header>
+    <!-- header -->
+
+        <div class="content content-middle">
+          <div class= "topic__title">
+            <h2 class="topic__title-text">Contact<h2/>
+            </div>
+            <!--/.topic__title-->
+            <div class="main__wrapper">
+              <div class="contactform">
+                <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLScjKpIIjHfwXRxIjRY2G6AMfhTRZdu-0U-efrjaV2YuIgbCWg/formResponse"
+                method="post" target="hidden_iframe" onsubmit="submitted=true;">
+                  <div class="contactform__item">
+                    <input id="name" name="entry.591389246" type="text" value="" placeholder="NAME" required=""></div>
+                  <!--/.contactform__item-->
+                   <div class="contactform__item">
+                    <input id="email" name="entry.1691110656" type="text" value="" placeholder="EMAIL" required="">
+                   </div>
+                  <!--/.contactform__item-->
+                   <div class="contactform__item">
+                    <textarea id="message" name="entry.700590186" required="" placeholder="Your Message"></textarea>
+                   </div>
+                  <!--/.contactform__item-->
+                   <div class="btn-wrapper">
+                    <button class="btn" type="submit" name="button" value="送信する">SEND</button>
+                  </div>
+                   <!--/.btn-wrapper-->
+                   <script type="text/javascript">let submitted = false;</script>
+                   <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){window.location='thanks.html';}"></iframe>
+                 </form>
+               </div>
+               <!--/.contactform-->
+               <figure class="design-wrapper">
+              <div class="textbox-wrapper">
+                <div class="textbox"><p>お気軽に<br>ご連絡ください♪</p></div>
+              </div>
+                <img class="design__logo" src="images/cat_contact.jpg" alt="猫が伸びをしているイラスト">
+              </figure>
+              <!--/.design-wrapper-->
+            </div>
+            <!--/.main__wrapper-->
+            <div id="top_scroll">
+              <a href="about.html" id="page-top">
+                <img src="https://img.icons8.com/ios-filled/80/000000/circled-up-2.png"/ alt="ページTOPに戻る"><br>PAGE TOP</a>
+            </div>
+        </div>
+        <!--/.content-->
+
+        <footer>
+          <div class="footer__inner">
+              <small class="footer-copyright">&copy; 2020 petit à petit by Ayami MORIMURA</small>
+          </div>
+          <!--/.footer__inner-->
+        </footer>
+      </div>
+      <!--/.container-->
+      <script src="js/jquery-3.5.1.min.js"></script>
+      <script src="js/script.js"></script>
+  </body>
+</html>

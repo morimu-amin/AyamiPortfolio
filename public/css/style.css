@@ -374,16 +374,54 @@ footer{
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
-.card {
-   padding-top: 150px;
-   padding-bottom: 150px;
-}
-
-.card__title {
+.topic__title-works{
   text-align: center;
-  font-size: 3.5rem;
+  padding: 10px;
+}
+
+.topic__title-desc {
+  font-size: 1rem;
+}
+
+.card__wrapper {
+   margin-top: 2.5rem;
+   margin-bottom: 2.5rem;
+   width: 100%;
+}
+
+.card__items {
+  width: 100%;
+  list-style: none;
+}
+
+.card__img {
+  max-width: 100%;
+  height: auto;
+  transition: all .3s ease;
+}
+
+.card__img:hover {
+  background: #000;
+  opacity: .7;
+}
+
+.card__title-wrapper {
+display: flex;
+justify-content: space-between;
+padding-right: 10px;
+padding-left: 10px;
+margin-bottom: 10px;
+}
+
+.card__title,
+.card__link-site {
+  color: #cc608f;
+  font-weight: bold;
+  font-size: 1.25rem;
+  font-family: sans-serif;
 }
 
 /* ------------------------------ contact.html ------------------------------*/

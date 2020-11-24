@@ -416,12 +416,25 @@ padding-left: 10px;
 margin-bottom: 10px;
 }
 
-.card__title,
-.card__link-site {
-  color: #cc608f;
-  font-weight: bold;
-  font-size: 1.25rem;
+.card__title {
   font-family: sans-serif;
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #cc608f;
+}
+
+.card__title:hover {
+  color: #f5a500;
+}
+
+.card__link-git {
+  color: #000;
+  font-size: 1.25rem;
+}
+
+.card__link-git:hover {
+  transform: scale(1.5);
+  transition: .3s;
 }
 
 /* ------------------------------ contact.html ------------------------------*/

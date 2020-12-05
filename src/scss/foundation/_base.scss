@@ -1,0 +1,59 @@
+$fontFamily: 'Hiragino Kaku Gothic Pro','ヒラギノ角ゴ Pro W3','メイリオ',Meiryo,'ＭＳ Ｐゴシック', sans-serif;
+$basicBlack: '#000';
+$gray: #888;
+$navy: #5b5c76;
+$pink: #cc608f;
+$starYellow: #f6c745;
+$bg-beige: #f1cfb8;
+$footerBg-beige:#afa07f;
+$footerColor:#fff;
+$header: 70px;
+$padding10px: 0.625rem;
+$padding20px: 1.25rem;
+$padding30px: 1.875rem;
+$maxWidth: 1230px;
+$fontNerko: 'Nerko One', cursive;
+$fontDM: 'DM Serif Display', serif;
+
+//media-query
+$bp-smartphone-portrait: 520px;
+$bp-tablet-portrait: 960px;
+$breakpoints: (
+sm: $bp-smartphone-portrait,
+tb: $bp-tablet-portrait,
+)!default;
+
+@mixin mq($breakpoint) {
+  @media ( max-width: #{map-get($breakpoints, $breakpoint)} ) {
+    @content;
+  }
+}
+
+//font-size
+@mixin fs($size: 24, $base: 16) {
+  font-size: $size + px;
+  font-size: ($size / $base) * 1rem;
+}
+
+html {
+  font-size: 100%;
+  height: 100%;
+  scroll-behavior:smooth;
+}
+
+body {
+  font-family: $fontFamily;
+  line-height: 1.7;
+  height: 100%;
+  width: 100%;
+  color: $basicBlack;
+  letter-spacing: 0.05em;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}

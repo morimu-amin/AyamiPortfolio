@@ -1,0 +1,60 @@
+@import "../foundation/base";
+
+.l-header {
+  padding-top: $padding20px;
+}
+
+.l-header__inner {
+  max-width: $maxWidth;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.l-content {
+  max-width: $maxWidth;
+  width: 100%;
+  padding: 30px 15px 50px 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.l-main {
+  min-height: 100vh;
+  margin-top: $padding20px;
+  margin-bottom: -50px;
+  @include mq(tb){
+
+  }
+}
+
+.l-main-bg {
+  background-image: url('../images/stripe.png');
+  background-repeat: repeat;
+}
+
+.l-topic__inner {
+  padding-bottom: $padding20px;
+}
+
+.l-bg-beige {
+  background-color: $bg-beige;
+}
+
+.l-profile__wrapper,
+.l-skill__wrapper,
+.l-contact__wrapper {
+  padding-top: $padding30px;
+  padding-bottom: $padding30px;
+}
+
+.l-bg-footer-beige {
+  background-color: $footerBg-beige;
+}
+
+.l-footer__inner {
+  padding-top: $padding20px;
+  padding-bottom: $padding20px;
+  text-align: center;
+}

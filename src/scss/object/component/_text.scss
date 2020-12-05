@@ -1,0 +1,25 @@
+
+.c-profile__text {
+  @include fs(18);
+  @include mq(sm) {
+    @include fs(14);
+  }
+}
+
+.c-skill__item-text-star {
+  color: $starYellow;
+  @include fs(20);
+}
+
+.c-works__info-text {
+  @include fs(13);
+  text-align: center;
+}
+
+.c-contact-text {
+  text-align: center;
+}
+
+.c-footer-copyright {
+  color: #fff;
+}

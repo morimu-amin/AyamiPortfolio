@@ -1,0 +1,36 @@
+.c-main__title {
+  @include fs(50);
+  font-family: $fontNerko;
+  @include mq(sm){
+        @include fs(30);
+  }
+}
+
+.c-main__title-jp {
+  @include fs(33);
+  font-family: $fontFamily;
+  @include mq(sm){
+    @include fs(23);
+  }
+}
+
+.c-content-subtitle {
+  @include fs(26);
+  font-weight: normal;
+  @include mq(sm){
+    @include fs(18);
+    padding-top: $padding10px;
+  }
+}
+
+.c-topic__title-text {
+  @include fs(35);
+  text-align: center;
+  color: $navy;
+  font-family: $fontDM;
+  font-style: italic;
+}
+
+.c-main__title-silde {
+  list-style-type: none;
+}

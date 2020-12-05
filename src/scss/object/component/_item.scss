@@ -1,0 +1,98 @@
+.c-skill__item  {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 2rem;
+  width: 31%;
+  @include fs(18);
+  @include mq(tb) {
+  width: 48%;
+  }
+  @include mq(sm) {
+  width: 100%;
+  @include fs(14);
+  }
+}
+
+.c-nav-item {
+  @include fs(24);
+  font-family: $fontDM;
+  @include mq(sm){
+    @include fs(13);
+  }
+}
+
+.c-scroll-down {
+  position: absolute;
+  padding: 0 15px;
+  width: 100%;
+  bottom: 15px;
+  text-align: center;
+  color: black;
+  animation: fadeIn 2s ease 0s infinite;
+  @include mq(tb){
+    bottom: 50px;
+  }
+}
+
+
+@keyframes fadeIn {
+  0% {opacity: 0;
+  }
+  80% {
+      opacity: 1;
+      transform: translateY(15px);
+  }
+  100% {
+      transform: translateY(0);
+  }
+}
+
+.c-works__items {
+  list-style: none;
+}
+
+.c-contact__items {
+  list-style: none;
+  margin-bottom: 2rem;
+}
+
+.c-contact-icon {
+  display: inline-block;
+  padding-right: 5px;
+  padding-left: 5px;
+   &:hover {
+     transform: scale(1.3, 1.3);
+     transition: .3s;
+   }
+}
+
+.c-page-top-scroll {
+  opacity: .8;
+  color: #000;
+  @include mq(sm){
+    width: 48px;
+    height: 48px;
+    
+  }
+}
+
+#page-top {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 10;
+    @include mq(sm);
+    right: 30px;
+}
+
+.c-contact-twitter__link {
+  color: #1DA1F2;
+}
+
+.c-contact-messenger__link {
+  color: #0084FF;
+}
+
+.c-contact-github__link {
+  color: #000;
+}

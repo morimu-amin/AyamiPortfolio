@@ -1,0 +1,40 @@
+.u-subtitle_margin {
+  margin-top: 1rem;
+  @include mq(sm){
+    margin-top: 0;
+  }
+}
+
+.u-profile__photo_margin {
+  margin-bottom: 1rem;
+}
+
+.u-mq-sm {
+  display: none;
+  @include mq(tb){
+    display: block;
+  }
+}
+
+.u-works__topic-margin {
+  margin-bottom: 30px;
+}
+
+@include mq(sm){
+    .u-mq-sm-display{
+      display: none;
+    }
+}
+
+.u-works-sm__display {
+  display: none;
+  @include mq(sm){
+    display: block;
+  }  
+}
+
+@include mq(sm){
+  .u-works-pc__display {
+    display: none;
+  }
+}
